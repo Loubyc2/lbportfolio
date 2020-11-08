@@ -1,0 +1,33 @@
+.home__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.home__services .card-img {
+    max-width: 100%;
+    height: fit-content;
+}
+
+.home__services .card-header>h5 {
+    color: #f5f5f5;
+}
+
+.card-header {
+    background-color: #526273;
+}
+
+
+/* Media quey */
+
+@media screen and (max-width:992px) {
+    .home__services {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .home__services {
+        text-align: center;
+    }
+}

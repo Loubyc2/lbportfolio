@@ -14,11 +14,11 @@ function Header() {
                         <div className='hr my-3'></div>
 
                         <p>
-                            Soy un <strong>front-end</strong> web devlopper.
+                            Soy un <strong>front-end</strong> web developer.
                             Me dedico a crear moderna pagina web y, soy diseñador grafico tambien.
                         </p>
                         <Link to='/'>
-                            <button className='btn text-uppercase btn-outline-success'>mandarme un email</button>
+                            <button className='btn text-uppercase btn-outline-success my-3'>mandarme un email</button>
                         </Link>
                     </div>
                     <div className="img col ">
