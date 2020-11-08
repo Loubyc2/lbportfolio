@@ -11,6 +11,7 @@
 
 .home__services .card-header>h5 {
     color: #f5f5f5;
+    margin-bottom: 0;
 }
 
 .card-header {
