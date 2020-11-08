@@ -165,6 +165,10 @@ a {
         height: auto;
         object-fit: contain;
     }
+    .header__banner-text>p {
+        color: #0d1432;
+        line-height: 26px;
+    }
     .btn-outline-success {}
 }
 
