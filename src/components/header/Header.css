@@ -155,12 +155,12 @@ a {
     }
     .header__banner-text {
         z-index: 100;
-        /* width: 400px; */
+        padding-top: 45px;
         text-align: justify;
     }
     .header__banner-text>h4 {
-        font-size: 45px;
-        line-height: 48px;
+        font-size: 40px;
+        line-height: 38px;
         text-shadow: none;
     }
     .header__banner-img {
