@@ -1,19 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import "./Home.css";
+import { NavLink } from 'react-router-dom'
+
+import * as FaIcons from 'react-icons/fa'
 
 import webadaptive from '../../img/web-adaptive.jpg';
 import webdesign from '../../img/web-design.jpg';
 import webgraphic from '../../img/graphic-design.jpg';
 
 function Home() {
-    const [screen, setScreen] = React.useState(window.innerWidth)
-    const checkScreen = () => {
-        setScreen(window.innerWidth)
-    }
 
-    useEffect(() => {
-        window.addEventListener('resize', checkScreen)
-    })
     return (
         <div className='home mt-4'>
 
@@ -47,8 +43,27 @@ function Home() {
                     </div>
                 </div>
             </div>
-            {screen}
-        </div>
+            <footer className=''>
+                <p className='footer-copyright'>&copy; 2020 Lb Design</p>
+                <ul className='footer__nav-links'>
+                    <li><NavLink className='footer-link' to='/'>Inicio</NavLink></li>
+                    <li><NavLink className='footer-link' to='/'>Portafolio</NavLink></li>
+                    <li><NavLink className='footer-link' to='/'>Contacto</NavLink></li>
+                </ul>
+                <form action="" className='my-2'>
+                    <input type="text" className="form-control text-center" placeholder={`Ingresar tu email `} />
+                </form>
+                <div className="footer__icons ">
+                    <ul className="footer-list-icons">
+                        <li className='footer-icons'><a href="https://www.facebook.com/loubyf1/" target='_blanck'><FaIcons.FaFacebookF /></a> </li>
+                        <li className='footer-icons'><a href="https://twitter.com/LoubyAime" target='_blanck'><FaIcons.FaTwitter /></a></li>
+                        <li className='footer-icons'><a href="https://www.instagram.com/loubyclameus/" target='_blanck'><FaIcons.FaInstagram /></a></li>
+                    </ul>
+                </div>
+
+
+            </footer>
+        </div >
     )
 }
 
