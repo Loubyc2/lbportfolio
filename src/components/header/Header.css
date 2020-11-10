@@ -153,23 +153,44 @@ a {
         text-align: center;
         flex-direction: column;
     }
-    .header__banner .hr {
-        margin: 0 auto;
+    .header__banner-text {
+        z-index: 100;
+        /* width: 400px; */
+        text-align: justify;
+    }
+    .header__banner-text>h4 {
+        font-size: 45px;
+        line-height: 48px;
+        text-shadow: none;
     }
     .header__banner-img {
+        visibility: hidden;
+    }
+    .img.col {
+        background-image: url('../../img/portfolio-img1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 250px;
         position: absolute;
+        left: 45%;
+        top: 1%;
+        border-radius: 100%;
         opacity: 0.4;
         max-width: 100%;
-        top: -400px;
-        margin: 0 auto;
-        height: auto;
-        object-fit: contain;
+        height: 335px;
+        width: 335px;
+        box-shadow: inset 0 0 20px #d0d0d0, inset 0 0 2px #f8f8f8;
     }
     .header__banner-text>p {
-        color: #0d1432;
+        color: #343434;
         line-height: 26px;
+        font-size: 18px;
+        max-width: 300px;
     }
-    .btn-outline-success {}
+    .header__banner-bottom {
+        z-index: 100;
+        background-color: #fff;
+    }
 }
 
 
